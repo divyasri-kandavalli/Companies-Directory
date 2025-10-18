@@ -20,7 +20,7 @@ const CompanyList = () => {
   // Fetch companies with Axios
   const fetchCompanies = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/companies");
+      const response = await axios.get("https://companies-directory-iy9m.onrender.com/api/companies");
       setCompanies(response.data);
     } catch (err) {
       setError("Failed to fetch companies. Please try again.");
